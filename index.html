@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="个人网页作品集，展示项目、经历、技能与联系方式。"
+    />
+    <title>你的名字 | 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="返回首页">
+        <span class="brand-mark">Y</span>
+        <span>你的名字</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#projects">项目</a>
+        <a href="#experience">经历</a>
+        <a href="#skills">技能</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <img
+          class="hero-image"
+          src="./assets/hero-workspace.png"
+          alt="现代工作桌面与城市晨光"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Developer / Designer / Creator</p>
+          <h1>你好，我是你的名字。</h1>
+          <p class="hero-copy">
+            我关注产品体验、前端开发和清晰表达，喜欢把复杂问题做成稳定、
+            好用、看起来也舒服的东西。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">查看项目</a>
+            <a class="button secondary" href="mailto:you@example.com">联系我</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section">
+        <div>
+          <p class="section-label">About</p>
+          <h2>把你的个人定位写在这里。</h2>
+        </div>
+        <p>
+          这里可以放 2 到 3 句话，说明你是谁、正在做什么、擅长什么，以及你希望别人通过这个网页了解你什么。
+          比如：我是一名计算机专业学生 / 前端工程师 / 产品设计爱好者，正在寻找实习、合作或展示个人作品。
+        </p>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>精选项目</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">Web App</div>
+            <h3>项目名称一</h3>
+            <p>
+              简短描述项目解决了什么问题、你负责了哪些部分，以及最终效果。
+            </p>
+            <a href="#" aria-label="查看项目名称一">查看详情</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Research</div>
+            <h3>项目名称二</h3>
+            <p>
+              可以写课程项目、论文、开源贡献、设计作品，突出你的思考和结果。
+            </p>
+            <a href="#" aria-label="查看项目名称二">查看详情</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Tooling</div>
+            <h3>项目名称三</h3>
+            <p>
+              用数据、用户反馈或技术亮点来说明项目价值，会比堆技术名词更有说服力。
+            </p>
+            <a href="#" aria-label="查看项目名称三">查看详情</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="split section" id="experience">
+        <div>
+          <p class="section-label">Experience</p>
+          <h2>经历</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2026</span>
+            <h3>职位 / 学校 / 组织名称</h3>
+            <p>写一条最重要的成果，比如负责某功能、完成某研究、组织某活动。</p>
+          </article>
+          <article>
+            <span>2025</span>
+            <h3>职位 / 学校 / 组织名称</h3>
+            <p>尽量用具体动词开头：设计、开发、分析、优化、发布、协作。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="section-heading">
+          <p class="section-label">Skills</p>
+          <h2>技能栈</h2>
+        </div>
+        <ul class="skill-list" aria-label="技能列表">
+          <li>HTML / CSS / JavaScript</li>
+          <li>React / Vue</li>
+          <li>Python</li>
+          <li>UI Design</li>
+          <li>Data Analysis</li>
+          <li>Git / GitHub</li>
+        </ul>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>一起聊聊。</h2>
+          <p>
+            欢迎通过邮件、GitHub 或 LinkedIn 找到我。把下面链接替换成你的真实地址即可。
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:you@example.com">you@example.com</a>
+          <a href="https://github.com/yourname">GitHub</a>
+          <a href="https://www.linkedin.com/in/yourname">LinkedIn</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span data-year></span> 你的名字</span>
+      <a href="#home">回到顶部</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
