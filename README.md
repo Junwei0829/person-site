@@ -23,8 +23,8 @@
 5. Branch 选择 `main`，目录选择 `/root`，保存。
 6. 等待一两分钟，访问 `https://yourname.github.io`。
 
-如果仓库不是 `yourname.github.io`，例如叫 `personal-site`，访问地址通常是：
+如果仓库不是 `yourname.github.io`，例如本仓库叫 `personal-website`，访问地址通常是：
 
 ```text
-https://yourname.github.io/personal-site/
+https://yourname.github.io/personal-website/
 ```
