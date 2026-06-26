@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="个人网页作品集，展示项目、经历、技能与联系方式。"
+      content="A personal portfolio website showcasing projects, experience, skills, and contact information."
     />
-    <title>你的名字 | 个人主页</title>
+    <title>Junwei Lin | Personal Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,15 +18,16 @@
   </head>
   <body>
     <header class="site-header" data-header>
-      <a class="brand" href="#home" aria-label="返回首页">
-        <span class="brand-mark">Y</span>
-        <span>你的名字</span>
+      <a class="brand" href="#home" aria-label="Back to home">
+        <span class="brand-mark" aria-hidden="true">JL</span>
+        <span>Junwei Lin</span>
       </a>
-      <nav class="nav" aria-label="主导航">
-        <a href="#projects">项目</a>
-        <a href="#experience">经历</a>
-        <a href="#skills">技能</a>
-        <a href="#contact">联系</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
       </nav>
     </header>
 
@@ -35,19 +36,26 @@
         <img
           class="hero-image"
           src="./assets/hero-workspace.png"
-          alt="现代工作桌面与城市晨光"
+          alt="Modern workspace with city morning light"
         />
         <div class="hero-shade"></div>
         <div class="hero-content">
           <p class="eyebrow">Developer / Designer / Creator</p>
-          <h1>你好，我是你的名字。</h1>
+          <div class="hero-title">
+            <h1>Hello, I am Junwei Lin.</h1>
+            <img
+              class="hero-avatar"
+              src="./assets/avatar.png"
+              alt="Junwei Lin avatar"
+            />
+          </div>
           <p class="hero-copy">
-            我关注产品体验、前端开发和清晰表达，喜欢把复杂问题做成稳定、
-            好用、看起来也舒服的东西。
+            I focus on product experience, front-end development, and clear communication.
+            I enjoy turning complex ideas into reliable, useful, and polished digital work.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">查看项目</a>
-            <a class="button secondary" href="mailto:you@example.com">联系我</a>
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
           </div>
         </div>
       </section>
@@ -55,43 +63,66 @@
       <section class="intro section">
         <div>
           <p class="section-label">About</p>
-          <h2>把你的个人定位写在这里。</h2>
+          <h1>Me</h1>
         </div>
         <p>
-          这里可以放 2 到 3 句话，说明你是谁、正在做什么、擅长什么，以及你希望别人通过这个网页了解你什么。
-          比如：我是一名计算机专业学生 / 前端工程师 / 产品设计爱好者，正在寻找实习、合作或展示个人作品。
+          I am an <strong>electrical engineering</strong> student interested in robotics, <strong>intelligent systems</strong>,
+          and the connection between hardware and software. I enjoy learning how circuits,
+          sensors, control systems, and programming can work together to build machines that
+          move, respond, and solve real-world problems.
         </p>
       </section>
 
-      <section class="section" id="projects">
-        <div class="section-heading">
-          <p class="section-label">Projects</p>
-          <h2>精选项目</h2>
+      
+      <section class="split section education" id="education">
+        <div>
+          <p class="section-label">Education</p>
+          <h2>Education</h2>
         </div>
-        <div class="project-grid">
-          <article class="project-card">
-            <div class="project-meta">Web App</div>
-            <h3>项目名称一</h3>
-            <p>
-              简短描述项目解决了什么问题、你负责了哪些部分，以及最终效果。
-            </p>
-            <a href="#" aria-label="查看项目名称一">查看详情</a>
+        <div class="timeline">
+          <article>
+            <div class="education-header">
+              <div>
+                <span>2026 - Present</span>
+                <h3>University of California, Los Angeles (UCLA)</h3>
+                <p class="education-meta">Major: Electrical Engineering · GPA: TBD</p>
+              </div>
+              <img
+                class="school-logo"
+                src="./assets/ucla-logo.png"
+                alt="UCLA logo"
+              />
+            </div>
+            <div class="course-space">
+              <h4>Relevant Courses</h4>
+              <ul>
+                <li>Course Name</li>
+                <li>Course Name</li>
+                <li>Course Name</li>
+              </ul>
+            </div>
           </article>
-          <article class="project-card">
-            <div class="project-meta">Research</div>
-            <h3>项目名称二</h3>
-            <p>
-              可以写课程项目、论文、开源贡献、设计作品，突出你的思考和结果。
-            </p>
-            <a href="#" aria-label="查看项目名称二">查看详情</a>
-          </article>
-          <article class="project-card">
-            <div class="project-meta">Tooling</div>
-            <h3>项目名称三</h3>
-            <p>
-              用数据、用户反馈或技术亮点来说明项目价值，会比堆技术名词更有说服力。
-            </p>
-            <a href="#" aria-label="查看项目名称三">查看详情</a>
+          <article>
+            <div class="education-header">
+              <div>
+                <span>2023 - 2026</span>
+                <h3>Mt. San Antonio College (Mt. SAC)</h3>
+                <p class="education-meta">Major: Electrical Engineering · GPA: 4.00</p>
+              </div>
+              <img
+                class="school-logo"
+                src="./assets/mtsac-logo.svg"
+                alt="Mt. SAC logo"
+              />
+            </div>
+            <div class="course-space">
+              <h4>Relevant Courses</h4>
+              <ul>
+                <li>Course Name</li>
+                <li>Course Name</li>
+                <li>Course Name</li>
+              </ul>
+            </div>
           </article>
         </div>
       </section>
@@ -99,18 +130,18 @@
       <section class="split section" id="experience">
         <div>
           <p class="section-label">Experience</p>
-          <h2>经历</h2>
+          <h2>Experience</h2>
         </div>
         <div class="timeline">
           <article>
             <span>2026</span>
-            <h3>职位 / 学校 / 组织名称</h3>
-            <p>写一条最重要的成果，比如负责某功能、完成某研究、组织某活动。</p>
+            <h3>Role / School / Organization</h3>
+            <p>Write one key achievement, such as building a feature, completing research, or organizing an event.</p>
           </article>
           <article>
             <span>2025</span>
-            <h3>职位 / 学校 / 组织名称</h3>
-            <p>尽量用具体动词开头：设计、开发、分析、优化、发布、协作。</p>
+            <h3>Role / School / Organization</h3>
+            <p>Start with clear action verbs such as designed, built, analyzed, improved, launched, or collaborated.</p>
           </article>
         </div>
       </section>
@@ -118,24 +149,68 @@
       <section class="section" id="skills">
         <div class="section-heading">
           <p class="section-label">Skills</p>
-          <h2>技能栈</h2>
+          <h2>Skills</h2>
         </div>
-        <ul class="skill-list" aria-label="技能列表">
-          <li>HTML / CSS / JavaScript</li>
-          <li>React / Vue</li>
-          <li>Python</li>
-          <li>UI Design</li>
-          <li>Data Analysis</li>
+        <ul class="skill-list" aria-label="Skills list">
+          <li>HTML/C++/Java</li>
+          <li>CAD</li>
+          <li>Vibe Coding</li>
           <li>Git / GitHub</li>
         </ul>
+        <div class="tool-group">
+          <h3>Tools</h3>
+          <ul class="skill-list" aria-label="Tools I want to use">
+            <li>Visual Studio Code</li>
+            <li>GitHub</li>
+            <li>solidworks</li>
+            <li>onshape</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="section-heading">
+          <p class="section-label">Projects</p>
+          <h2>Featured Projects</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-meta">Web App</div>
+            <h3>Project Name One</h3>
+            <p>
+              Briefly describe the problem this project solves, what you contributed,
+              and the final result.
+            </p>
+            <a href="#" aria-label="View Project Name One">View Details</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Research</div>
+            <h3>Project Name Two</h3>
+            <p>
+              This can be a course project, research paper, open-source contribution,
+              or design work. Highlight your thinking and outcomes.
+            </p>
+            <a href="#" aria-label="View Project Name Two">View Details</a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta">Tooling</div>
+            <h3>Project Name Three</h3>
+            <p>
+              Use data, user feedback, or technical highlights to show the project's value
+              instead of only listing technologies.
+            </p>
+            <a href="#" aria-label="View Project Name Three">View Details</a>
+          </article>
+        </div>
       </section>
 
       <section class="contact section" id="contact">
         <div>
           <p class="section-label">Contact</p>
-          <h2>一起聊聊。</h2>
+          <h2>Let's talk.</h2>
           <p>
-            欢迎通过邮件、GitHub 或 LinkedIn 找到我。把下面链接替换成你的真实地址即可。
+            Feel free to reach me by email, GitHub, or LinkedIn.
+            Replace the links below with your real accounts.
           </p>
         </div>
         <div class="contact-links">
@@ -147,8 +222,8 @@
     </main>
 
     <footer class="footer">
-      <span>© <span data-year></span> 你的名字</span>
-      <a href="#home">回到顶部</a>
+      <span>© <span data-year></span> Junwei Lin</span>
+      <a href="#home">Back to Top</a>
     </footer>
 
     <script src="./script.js"></script>
