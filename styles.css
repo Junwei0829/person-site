@@ -556,6 +556,11 @@ h4 {
     display: none;
   }
 
+  .detail-nav {
+    display: flex;
+    font-size: 0.82rem;
+  }
+
   .hero {
     min-height: 86vh;
     padding: 118px 20px 56px;
