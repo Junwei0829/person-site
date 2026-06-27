@@ -299,6 +299,30 @@ h4 {
   padding: 4px 0 8px 22px;
 }
 
+.experience-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.timeline .experience-role {
+  margin-bottom: 14px;
+  color: var(--teal-dark);
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.experience-logo {
+  width: 112px;
+  height: 112px;
+  flex: 0 0 auto;
+  border: 1px solid rgba(20, 35, 33, 0.12);
+  border-radius: 6px;
+  box-shadow: 0 10px 28px rgba(20, 35, 33, 0.1);
+  object-fit: cover;
+}
+
 .education-header {
   display: flex;
   align-items: flex-start;
@@ -559,6 +583,15 @@ h4 {
   .detail-nav {
     display: flex;
     font-size: 0.82rem;
+  }
+
+  .experience-header {
+    gap: 14px;
+  }
+
+  .experience-logo {
+    width: 82px;
+    height: 82px;
   }
 
   .hero {
