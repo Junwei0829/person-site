@@ -404,6 +404,104 @@ h4 {
   color: var(--muted);
 }
 
+.detail-page {
+  min-height: 100vh;
+}
+
+.detail-header {
+  position: fixed;
+}
+
+.detail-nav a {
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.project-detail {
+  padding-top: 118px;
+}
+
+.project-detail-hero {
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  border-bottom: 1px solid var(--line);
+  padding: 68px 0 58px;
+}
+
+.project-detail-hero h1 {
+  max-width: 850px;
+  margin-bottom: 20px;
+  color: var(--ink);
+  font-size: clamp(2.8rem, 7vw, 5.8rem);
+}
+
+.project-detail-lead {
+  max-width: 760px;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, 0.6fr);
+  gap: clamp(36px, 7vw, 88px);
+  width: min(1120px, calc(100% - 40px));
+  margin: 0 auto;
+  padding: 64px 0 88px;
+}
+
+.project-detail-content section + section {
+  margin-top: 48px;
+}
+
+.project-detail-content h2 {
+  font-size: 1.8rem;
+}
+
+.project-detail-content p {
+  color: var(--muted);
+}
+
+.project-facts {
+  border-left: 3px solid var(--teal);
+  padding-left: 24px;
+}
+
+.project-facts dl {
+  margin: 0;
+}
+
+.project-facts dt {
+  margin-top: 22px;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.project-facts dt:first-child {
+  margin-top: 0;
+}
+
+.project-facts dd {
+  margin: 4px 0 0;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.detail-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 34px;
+}
+
+.detail-actions .button.primary {
+  background: var(--teal-dark);
+  color: var(--white);
+}
+
 @media (max-width: 820px) {
   .site-header {
     align-items: flex-start;
@@ -438,7 +536,8 @@ h4 {
   .intro,
   .split,
   .contact,
-  .project-grid {
+  .project-grid,
+  .project-detail-grid {
     grid-template-columns: 1fr;
   }
 
@@ -477,6 +576,14 @@ h4 {
 
   .button {
     width: 100%;
+  }
+
+  .project-detail {
+    padding-top: 88px;
+  }
+
+  .project-detail-hero {
+    padding-top: 52px;
   }
 
   .footer {
